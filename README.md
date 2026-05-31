@@ -1,6 +1,6 @@
 # Orientable Stargazer
 
-[![CI](https://github.com/shuwang1/Orientable-stargazer/actions/workflows/ci.yml/badge.svg)](https://github.com/shuwang1/Orientable-stargazer/actions/workflows/ci.yml)
+[![CI](https://github.com/shuwang1/Orientable-stargazer/actions/workflows/test.yml/badge.svg)](https://github.com/shuwang1/Orientable-stargazer/actions/workflows/test.yml)
 
 **Orientable Stargazer** is a high-fidelity GNSS Constellation Simulator and Visualizer. It features a modern, high-contrast "Cyber/Instrument" dashboard designed for real-time analysis of global navigation satellite systems.
 
