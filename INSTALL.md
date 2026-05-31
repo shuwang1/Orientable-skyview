@@ -50,6 +50,33 @@ Open your web browser and navigate to:
 http://localhost:8000
 ```
 
+## Development Setup
+
+If you wish to contribute to the project or run the testing suite, you will need Node.js installed.
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Run Unit Tests (Vitest)
+```bash
+npm run test:unit
+```
+
+### 3. Run E2E Tests (Playwright)
+Note: You must install the Playwright browsers first.
+```bash
+npx playwright install chromium --with-deps
+npm run test:e2e
+```
+
+### 4. Linting and Formatting
+```bash
+npm run lint    # Check for issues
+npm run format  # Auto-format code
+```
+
 ## Quick Usage Guide
 
 Once the application is running:

@@ -12,8 +12,8 @@
 
 Comprehensive tracking and simulation for all major global and regional satellite systems:
 
-- **Global:** GPS, GLONASS, Galileo, BeiDou.
-- **Regional/Augmentation:** QZSS (Japan) and SBAS.
+- **Global:** Beidou, Galileo, GLONASS, GPS.
+- **Regional/Augmentation:** SBAS and QZSS (Japan).
 
 ### 2. Hybrid Visualization Stage
 
@@ -40,6 +40,18 @@ Comprehensive tracking and simulation for all major global and regional satellit
 - **Physics:** [satellite.js](https://github.com/shashwatak/satellite-js) for SGP4 orbital propagation.
 - **Math:** [Sylvester.js](http://sylvester.jcoglan.com/) for vector and matrix operations.
 - **Styling:** Vanilla CSS with Google Fonts (Orbitron & Outfit).
+- **Testing:** [Vitest](https://vitest.dev/) (Unit), [Playwright](https://playwright.dev/) (E2E).
+- **Quality:** [ESLint](https://eslint.org/), [Prettier](https://prettier.io/).
+
+## 🧪 Development and Testing
+
+This project uses a modular architecture for core logic and includes a comprehensive testing suite.
+
+*   **Unit Tests:** Verify core math and parsing logic in isolation.
+*   **E2E Tests:** Ensure UI functionality and user workflows are preserved.
+*   **Linting/Formatting:** Enforce consistent code style and standards.
+
+Refer to [INSTALL.md](./INSTALL.md#development-setup) for development instructions.
 
 ---
 
