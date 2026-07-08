@@ -1,0 +1,27 @@
+name: Documentation CI
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '**.md'
+      - 'docs/**'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - '**.md'
+      - 'docs/**'
+
+jobs:
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Markdown Lint
+        run: npx markdownlint-cli '**/*.md' --ignore 'node_modules' --disable MD013 MD022 MD032 MD007 MD040 MD031 MD030 MD001 MD033 MD036 MD004
