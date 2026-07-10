@@ -1379,7 +1379,8 @@
                   G(m, { cursor: 'pointer' }));
                 e = (e.replace(/<(.|\n)*?>/g, '') || ' ')
                   .replace(/&lt;/g, '<')
-                  .replace(/&gt;/g, '>');
+                  .replace(/&gt;/g, '>')
+                  .replace(/[<>]/g, '');
                 if (e !== ' ') {
                   m.appendChild(y.createTextNode(e));
                   if (n) o.dx = 0;
