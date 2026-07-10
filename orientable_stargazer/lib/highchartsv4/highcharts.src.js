@@ -5480,7 +5480,7 @@
           }
         } else {
           // add namespace
-          markup = markup.replace('<', '<hcv:');
+          markup = markup.replace(/</g, '<hcv:');
         }
 
         return markup;
