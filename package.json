@@ -29,7 +29,7 @@
     "globals": "^17.6.0",
     "http-server": "^14.1.1",
     "jsdom": "^29.1.1",
-    "prettier": "^3.8.3",
+    "prettier": "^3.9.5",
     "vitest": "^4.1.7"
   }
 }
