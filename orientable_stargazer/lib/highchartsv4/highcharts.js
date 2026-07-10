@@ -22,6 +22,9 @@
         typeof a !== 'object' && (a = {});
         for (d in b)
           b.hasOwnProperty(d) &&
+            d !== '__proto__' &&
+            d !== 'constructor' &&
+            d !== 'prototype' &&
             ((c = b[d]),
             (a[d] =
               c &&
