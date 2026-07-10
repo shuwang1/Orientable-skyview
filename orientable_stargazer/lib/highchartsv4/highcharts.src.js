@@ -3139,9 +3139,11 @@
                 css(tspan, { cursor: 'pointer' });
               }
 
-              span = (span.replace(/<(.|\n)*?>/g, '') || ' ')
+              span = (span || ' ')
                 .replace(/&lt;/g, '<')
-                .replace(/&gt;/g, '>');
+                .replace(/&gt;/g, '>')
+                .replace(/</g, '')
+                .replace(/>/g, '');
 
               // Nested tags aren't supported, and cause crash in Safari (#1596)
               if (span !== ' ') {
