@@ -1377,7 +1377,12 @@
                   !d &&
                   (H(m, 'onclick', 'location.href="' + e.match(i)[1] + '"'),
                   G(m, { cursor: 'pointer' }));
-                e = (e.replace(/<(.|\n)*?>/g, '') || ' ')
+                var C = e, D;
+                do {
+                  D = C;
+                  C = C.replace(/<(.|\n)*?>/g, '');
+                } while (C !== D);
+                e = (C || ' ')
                   .replace(/&lt;/g, '<')
                   .replace(/&gt;/g, '>')
                   .replace(/[<>]/g, '');
