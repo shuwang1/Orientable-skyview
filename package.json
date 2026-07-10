@@ -24,7 +24,7 @@
   "homepage": "https://github.com/shuwang1/Orientable-stargazer#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@playwright/test": "^1.60.0",
+    "@playwright/test": "^1.61.1",
     "eslint": "^10.4.1",
     "globals": "^17.7.0",
     "http-server": "^14.1.1",
