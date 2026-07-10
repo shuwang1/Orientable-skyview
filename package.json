@@ -30,6 +30,6 @@
     "http-server": "^14.1.1",
     "jsdom": "^29.1.1",
     "prettier": "^3.8.3",
-    "vitest": "^4.1.7"
+    "vitest": "^4.1.10"
   }
 }
