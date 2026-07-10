@@ -1660,9 +1660,12 @@ var HighchartsAdapter = (function () {
                   !d &&
                   (H(m, 'onclick', 'location.href="' + e.match(i)[1] + '"'),
                   G(m, { cursor: 'pointer' }));
-                e = (e.replace(/<(.|\n)*?>/g, '') || ' ')
-                  .replace(/&lt;/g, '<')
-                  .replace(/&gt;/g, '>');
+                var u;
+                do {
+                  u = e;
+                  e = e.replace(/<(.|\n)*?>/g, '');
+                } while (e !== u);
+                e = (e || ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
                 if (e !== ' ') {
                   m.appendChild(y.createTextNode(e));
                   if (n) o.dx = 0;
