@@ -167,7 +167,7 @@
         .replace(/url\([^#]+#/g, 'url(#')
         .replace(/<svg /, '<svg xmlns:xlink="http://www.w3.org/1999/xlink" ')
         .replace(/ href=/g, ' xlink:href=')
-        .replace(/\n/, ' ')
+        .replace(/\n/g, ' ')
         .replace(/<\/svg>.*?$/, '</svg>')
         .replace(/&nbsp;/g, ' ')
         .replace(/&shy;/g, '­')
