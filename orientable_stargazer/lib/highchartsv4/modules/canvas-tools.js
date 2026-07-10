@@ -1872,7 +1872,7 @@ if (!Array.prototype.indexOf)
       for (
         var c =
             c.childNodes[0].nodeValue + (c.childNodes.length > 1 ? c.childNodes[1].nodeValue : ''),
-          c = c.replace(/(\/\*([^*]|[\r\n]|(\*+([^*\/]|[\r\n])))*\*+\/)|(^[\s]*\/\/.*)/gm, ''),
+          c = c.replace(/(\/\*[\s\S]*?\*\/)|(^[\s]*\/\/.*)/gm, ''),
           c = a.compressSpaces(c),
           c = c.split('}'),
           d = 0;
