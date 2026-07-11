@@ -1268,10 +1268,7 @@
       this.alignedObjects = [];
       this.url =
         (Ta || ib) && y.getElementsByTagName('base').length
-          ? f.href
-              .replace(/#.*?$/, '')
-              .replace(/([\('\)])/g, '\\$1')
-              .replace(/ /g, '%20')
+          ? encodeURI(f.href.replace(/#.*?$/, ''))
           : '';
       this.createElement('desc')
         .add()
