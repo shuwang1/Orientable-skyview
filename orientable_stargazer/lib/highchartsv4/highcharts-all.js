@@ -1553,6 +1553,7 @@ var HighchartsAdapter = (function () {
         (Ta || ib) && y.getElementsByTagName('base').length
           ? f.href
               .replace(/#.*?$/, '')
+              .replace(/\\/g, '\\\\')
               .replace(/([\('\)])/g, '\\$1')
               .replace(/ /g, '%20')
           : '';
