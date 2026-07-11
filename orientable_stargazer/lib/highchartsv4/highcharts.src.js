@@ -139,7 +139,12 @@
         }
 
         for (key in original) {
-          if (original.hasOwnProperty(key)) {
+          if (
+            original.hasOwnProperty(key) &&
+            key !== '__proto__' &&
+            key !== 'constructor' &&
+            key !== 'prototype'
+          ) {
             value = original[key];
 
             // Copy the contents of objects, but not arrays or DOM nodes
