@@ -2488,7 +2488,7 @@
               a.indexOf('style="') === -1
                 ? a.replace('/>', ' style="display:inline-block;behavior:url(#default#VML);" />')
                 : a.replace('style="', 'style="display:inline-block;behavior:url(#default#VML);')))
-          : (a = a.replace('<', '<hcv:'));
+          : (a = a.replace(/</g, '<hcv:'));
         return a;
       },
       text: ta.prototype.html,
