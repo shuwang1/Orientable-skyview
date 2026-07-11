@@ -2952,7 +2952,7 @@
         (isFirefox || isWebKit) && doc.getElementsByTagName('base').length
           ? loc.href
               .replace(/#.*?$/, '') // remove the hash
-              .replace(/([\('\)])/g, '\\$1') // escape parantheses and quotes
+              .replace(/([\\\('\)])/g, '\\$1') // escape backslashes, parantheses and quotes
               .replace(/ /g, '%20') // replace spaces (needed for Safari only)
           : '';
 
